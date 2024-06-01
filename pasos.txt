@@ -1,0 +1,9 @@
+python --version
+python -m pip install --upgrade pip
+pip install Django
+django-admin --version
+pip install django-cors-headers
+/python manage.py makemigrations
+/python manage.py migrate
+/python manage.py createsuperuser
+python manage.py runserver
