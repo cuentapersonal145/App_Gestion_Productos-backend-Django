@@ -51,7 +51,16 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # cors
+    'corsheaders.middleware.CorsMiddleware',
 ]
+
+# cors
+CORS_ORIGIN_ALLOW_ALL = False
+# Servidor de react 
+CORS_ORIGIN_WHITELIST = (
+       'http://localhost:3000',
+)
 
 ROOT_URLCONF = 'App_Gestion_Productos.urls'
 
