@@ -25,7 +25,10 @@ SECRET_KEY = 'django-insecure-7jl#77qq+w8ky69p#qq1-1$_$@mdj62xjb4ww(6mi&v6kcvc3p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost','192.168.1.51','192.168.1.105']
+ALLOWED_HOSTS = ['localhost',
+		'192.168.1.105', '192.168.1.106', '192.168.1.107','192.168.1.108', '192.168.1.109', 
+		'192.168.1.110', '192.168.1.111', '192.168.1.112','192.168.1.113', '192.168.1.114', 
+		'192.168.1.115']
 
 
 # Application definition
@@ -60,9 +63,10 @@ MIDDLEWARE = [
 CORS_ORIGIN_ALLOW_ALL = False
 # Servidor de react 
 CORS_ORIGIN_WHITELIST = (
-       'http://localhost:3000',
-	   'http://192.168.1.51:3000',
-	   'http://192.168.1.105:3000',
+       	'http://localhost:3000',
+	'http://192.168.1.105:3000', 'http://192.168.1.106:3000', 'http://192.168.1.107:3000', 'http://192.168.1.108:3000', 'http://192.168.1.109:3000', 
+	'http://192.168.1.110:3000', 'http://192.168.1.111:3000', 'http://192.168.1.112:3000', 'http://192.168.1.113:3000', 'http://192.168.1.114:3000', 
+	'http://192.168.1.115:3000'
 )
 
 ROOT_URLCONF = 'App_Gestion_Productos.urls'
